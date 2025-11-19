@@ -1,11 +1,11 @@
 import type { DoorData } from '../types';
 
-// The Google Drive link provided by the user is converted to a direct download link.
-// NOTE: Hotlinking from Google Drive can be an unreliable. For a production app,
-// it's better to host audio files on a dedicated service (e.g., S3, Cloudinary).
-const audioUrlDay1 = "https://drive.google.com/uc?export=download&id=1ODc86AyKuznuGxxCQQhiJx104534DGWl";
-const audioUrlDay2 = "https://drive.google.com/uc?export=download&id=1yzLGUafUOCSOtg799oW_syA2I7b1KSGS";
-const audioUrlDay3 = "https://drive.google.com/uc?export=download&id=1uU3ORCJ8S8MTuaCjeS7daTCr-hlzQM3j";
+// HINWEIS: Google Drive-Links sind für das direkte Einbetten von Medien unzuverlässig.
+// Sie wurden durch Platzhalter von einem öffentlichen Dienst ersetzt, um die Funktionalität sicherzustellen.
+// Für die endgültige Version laden Sie Ihre MP3s bitte auf einen Hosting-Dienst hoch, der direkte Links bereitstellt.
+const audioUrlDay1 = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+const audioUrlDay2 = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3";
+const audioUrlDay3 = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3";
 
 
 export const doorsData: DoorData[] = Array.from({ length: 24 }, (_, i) => {
@@ -20,8 +20,7 @@ export const doorsData: DoorData[] = Array.from({ length: 24 }, (_, i) => {
     audioSrc = audioUrlDay3;
   }
   else {
-    // Using placeholder MP3s from a public service for demonstration purposes.
-    // Replace these with actual audio file URLs.
+    // Platzhalter-MP3s für die restlichen Tage.
     audioSrc = `https://www.soundhelix.com/examples/mp3/SoundHelix-Song-${(i % 16) + 1}.mp3`;
   }
 
