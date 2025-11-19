@@ -1,0 +1,5 @@
+{
+  "name": "Interactive Advent Calendar",
+  "description": "An interactive Advent calendar for December 2025. Click on a door each day to reveal a surprise MP3 audio clip. Doors can only be opened on their corresponding day or after.",
+  "requestFramePermissions": []
+}
